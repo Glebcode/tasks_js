@@ -104,4 +104,33 @@
 // }
 //  splitCut();
 
- 
+// let obj1 = {
+//     name: "jcnjdcn",
+//     age: prompt('Скоко те лет??', ' '),
+//     contact: 324324
+// }
+
+// function test() {
+//     return 2
+// }
+
+
+// console.log(obj1.name2, obj1['name-4'], obj1.name1[1]);
+// console.log(obj1);
+// for (let zalupa in obj1) {
+
+//     if(zalupa == 'age'){
+
+//         if(obj1[zalupa] > 18){
+//             alert('Заєбіста!!')
+//         }else{
+//             alert("Лох, расти!!")
+//         }
+//     }
+// }
+
+
+// obj1.question = 'WTF?'
+// obj1['mother-name'] = 'Natalia'
+// console.log("🚀 ~ file: tasks.js ~ line 134 ~ obj1", obj1)
+
