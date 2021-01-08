@@ -134,3 +134,26 @@
 // obj1['mother-name'] = 'Natalia'
 // console.log("🚀 ~ file: tasks.js ~ line 134 ~ obj1", obj1)
 
+
+
+
+/*
+forEach or map (5,6,3)
+*/
+////5/////
+// let filterUnique = [8, 2, 2, 3, 8, 2, 2, 3];
+// for(let i = 1; i < filterUnique.length; i++){
+//     for (let j = 2; j < filterUnique.length; j++)
+//    if( filterUnique[i] = filterUnique[j]){
+//        filterUnique.splice(j, 1)
+//    }
+// }
+//    console.log(filterUnique);
+
+let filterUnique = [8, 2, 2, 3, 8, 2, 2, 3];
+console.log(Math.max.filterUnique.length);
+
+
+
+
+
