@@ -9,6 +9,9 @@ let elementWithId = document.getElementById('test');
 // let elementQuerySelAll = document.querySelectorAll('.div');
 // console.log("elementQuerySelAll", elementQuerySelAll);
 
+let BGbody = document.body;
+BGbody.setAttribute('style', `background: grey`);
+
 
 let elementWithId2 = document.getElementById('test2');
 
@@ -19,14 +22,25 @@ let btnId2 = document.getElementById('btn2');
 
 
 
-function changeWidth() {
-    let userWidth = prompt('Сколько надо ширины?', '20');
-    elementWithId.setAttribute('style', `width:${userWidth}px;`);
+// function changeWidth() {
+//     let userWidth = prompt('Сколько надо ширины?', '20');
+//     elementWithId.setAttribute('style', `width:${userWidth}px;`);
+// }
+
+// function changeColor() {
+//     let userColor = prompt('Какой цвет те надо?', 'red');
+//     elementWithId2.setAttribute('style', `background-color:${userColor};`);
+// }
+// btnId2.addEventListener('click', changeWidth);
+// btnId2.addEventListener('click', changeColor);
+
+function chPosition() {
+elementWithId.setAttribute ('style', `margin-left: 20px`);
 }
 
-function changeColor() {
-    let userColor = prompt('Какой цвет те надо?', 'red');
-    elementWithId2.setAttribute('style', `background-color:${userColor};`);
+btnId.addEventListener('click', chPosition);
+
+function chCircle (){
+    elementWithId2.setAttribute('style', `border-radius: 50%`)
 }
-btnId.addEventListener('dblclick', changeWidth);
-btnId2.addEventListener('click', changeColor);
+btnId2.addEventListener('click', chCircle);
