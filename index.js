@@ -54,29 +54,31 @@ let btnId2 = document.getElementById('btn2');
 // btnId2.addEventListener('click', chCircle);
 // /////////////////////////////////////////////////////////////////////////////////////////////////
 
-// let marginLeft = 50;
-// let count = 0;
+let marginLeft = 50;
+let count = 0;
 
-// function chPosition() {
-//     count++
-//     if (count > 3) {
-//         marginLeft = 0;
-//         count = 0;
-//         elementWithId.setAttribute('style', `margin-left: ${marginLeft}px`);
-//     }
-//     elementWithId.setAttribute('style', `margin-left: ${marginLeft}px`);
-//     marginLeft += 50;
-// }
+function chPosition() {
+    let bulletBlack = document.getElementById('bullet');
+    bulletBlack.classList.add('shoot');
+    count++
+    if (count > 3) {
+        marginLeft = 0;
+        count = 0;
+        elementWithId.setAttribute('style', `margin-left: ${marginLeft}px`);
+    }
+    elementWithId.setAttribute('style', `margin-left: ${marginLeft}px`);
+    marginLeft += 50;
+}
 
 
-// btnId.addEventListener('click', chPosition);
+btnId.addEventListener('click', chPosition);
 
-// function chCircle() {
-//     count++
-//     elementWithId2.setAttribute('style', `border-radius: 50%; background-color: red`);
-//     if (count % 2 == 0) {
-//         elementWithId2.setAttribute('style', `border-radius: none; background-color: #f0f0f0`);
-//     }
-// }
+function chCircle() {
+    count++
+    elementWithId2.setAttribute('style', `border-radius: 50%; background-color: red`);
+    if (count % 2 == 0) {
+        elementWithId2.setAttribute('style', `border-radius: none; background-color: #f0f0f0`);
+    }
+}
 
-// btnId2.addEventListener('click', chCircle);
+btnId2.addEventListener('click', chCircle);

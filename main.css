@@ -1,7 +1,9 @@
 .test-div {
     background-color: #f0baba;
 }
-
+body{
+    overflow: hidden;
+}
 div {
     width: 300px;
     height: 300px;
@@ -9,9 +11,25 @@ div {
 }
 
 body * {
-    transition: 1s;
+    transition: 1.3s;
 }
 
 .test-div2 {
     background-color: #f0f0f0;
+}
+.pa {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bullet{
+    width: 40px;
+    height: 20px;
+    border-radius: 0px 18px 18px 0px;
+    background: #000;
+    opacity: 0;
+}
+.bullet.shoot{
+    left: 1900px;
+    opacity: 1;
 }
