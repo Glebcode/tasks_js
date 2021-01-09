@@ -33,14 +33,40 @@ let btnId2 = document.getElementById('btn2');
 // }
 // btnId2.addEventListener('click', changeWidth);
 // btnId2.addEventListener('click', changeColor);
+// /////////////////////////////////////////////////////////////////////////////////////////////
+
+let countClick = 0;
 
 function chPosition() {
 elementWithId.setAttribute ('style', `margin-left: 20px`);
+if(i <= 3 ){
+    btnId.addEventListener('click', chPosition()); 
+    i += 1; 
+    countClick = i; 
+}
+countClick = i;
 }
 
-btnId.addEventListener('click', chPosition);
+
+
+btnId.addEventListener('click', chPosition());
 
 function chCircle (){
-    elementWithId2.setAttribute('style', `border-radius: 50%`)
+    elementWithId2.setAttribute('style', `border-radius: 50%; background-color: red`);
 }
 btnId2.addEventListener('click', chCircle);
+// /////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+// function chPosition() {
+//     elementWithId.setAttribute('style', `margin-left: 20px`);
+// }
+
+
+// btnId.addEventListener('click', chPosition);
+
+// function chCircle() {
+//     elementWithId2.setAttribute('style', `border-radius: 50%; background-color: red`);
+// }
+// btnId2.addEventListener('click', chCircle);
