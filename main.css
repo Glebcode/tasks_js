@@ -1,11 +1,17 @@
-.test-div{
-background-color: #f0baba;
-}
-div{
-    width: 300px;
-    height: 300px;
+.test-div {
+    background-color: #f0baba;
 }
 
-.test-div2{
-background-color: #f0f0f0;
+div {
+    width: 300px;
+    height: 300px;
+
+}
+
+body * {
+    transition: 1s;
+}
+
+.test-div2 {
+    background-color: #f0f0f0;
 }

@@ -20,8 +20,6 @@ let btnId = document.getElementById('btn');
 let btnId2 = document.getElementById('btn2');
 
 
-
-
 // function changeWidth() {
 //     let userWidth = prompt('Сколько надо ширины?', '20');
 //     elementWithId.setAttribute('style', `width:${userWidth}px;`);
@@ -35,38 +33,50 @@ let btnId2 = document.getElementById('btn2');
 // btnId2.addEventListener('click', changeColor);
 // /////////////////////////////////////////////////////////////////////////////////////////////
 
-let countClick = 0;
-
-function chPosition() {
-elementWithId.setAttribute ('style', `margin-left: 20px`);
-if(i <= 3 ){
-    btnId.addEventListener('click', chPosition()); 
-    i += 1; 
-    countClick = i; 
-}
-countClick = i;
-}
-
-
-
-btnId.addEventListener('click', chPosition());
-
-function chCircle (){
-    elementWithId2.setAttribute('style', `border-radius: 50%; background-color: red`);
-}
-btnId2.addEventListener('click', chCircle);
-// /////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
+// let countClick = 0;
+//
 // function chPosition() {
-//     elementWithId.setAttribute('style', `margin-left: 20px`);
+// elementWithId.setAttribute ('style', `margin-left: 20px`);
+// if(i <= 3 ){
+//     btnId.addEventListener('click', chPosition());
+//     i += 1;
+//     countClick = i;
+// }
+// countClick = i;
 // }
 
 
 // btnId.addEventListener('click', chPosition);
-
-// function chCircle() {
+//
+// function chCircle (){
 //     elementWithId2.setAttribute('style', `border-radius: 50%; background-color: red`);
 // }
 // btnId2.addEventListener('click', chCircle);
+// /////////////////////////////////////////////////////////////////////////////////////////////////
+
+let marginLeft = 50;
+let count = 0;
+
+function chPosition() {
+    count++
+    if (count > 3) {
+        marginLeft = 0;
+        count = 0;
+        elementWithId.setAttribute('style', `margin-left: ${marginLeft}px`);
+    }
+    elementWithId.setAttribute('style', `margin-left: ${marginLeft}px`);
+    marginLeft += 50;
+}
+
+
+btnId.addEventListener('click', chPosition);
+
+function chCircle() {
+    count++
+    elementWithId2.setAttribute('style', `border-radius: 50%; background-color: red`);
+    if (count % 2 == 0) {
+        elementWithId2.setAttribute('style', `border-radius: none; background-color: #f0f0f0`);
+    }
+}
+
+btnId2.addEventListener('click', chCircle);
