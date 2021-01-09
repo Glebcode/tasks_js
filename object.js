@@ -1,23 +1,25 @@
 // let user = {
-//     name: "John"
+//     name: "John",
 //     surname:  "Smith"
 // };
-// user.name = b;
-// console.log("1st" + b );
+// let b = 'Pall';
+// b = user.name;
+// console.log("1st  " + b );
 // user.name = "Pete";
+// console.log("2nd  " + user.name);
 // delete user.name;
-
+// console.log("3rd  " + user.name);
 // ////////
 
 
 
 // function isEmpty() {
-
 //     for (let key in user) {
-//         return (alert("true"));
+//          alert ("true");
 //     }
-//     return (alert("false"))
+//     alert ("false");
 // }
+// isEmpty();
 
 
 ////////////////
@@ -46,4 +48,7 @@
 //       salaries[key] *= 2;
 //     }
 //   }
+//   console.log(salaries)
 // }
+
+// multiplyNumeric();
