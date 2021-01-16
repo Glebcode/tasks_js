@@ -73,8 +73,11 @@
 //    }
 // }
 //    console.log(filterUnique);
-
-
+// const result = filterUnique.filter((num) =>  filterUnique.forEach((el, i, arr)=>{
+//     console.log(num, arr[i+1])
+//     return  num !== arr[i+1]
+// }))
+// console.log(result)
 
 
 ///////////////////////////////////////////////////////////////////////

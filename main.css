@@ -11,7 +11,7 @@ div {
 }
 
 body * {
-    transition: 1.3s;
+    transition: .3s;
 }
 
 .test-div2 {
@@ -38,4 +38,6 @@ body * {
     position: absolute;
     height: 200px;
     width: 130px;
+    top: 0;
+    left: 0;
 }
