@@ -150,10 +150,149 @@ forEach or map (5,6,3)
 // }
 //    console.log(filterUnique);
 
-let filterUnique = [8, 2, 2, 3, 8, 2, 2, 3];
-console.log(Math.max.filterUnique.length);
+// let filterUnique = [8, 2, 2, 3, 8, 2, 2, 3];
+// console.log(Math.max.filterUnique.length);
 
 
 
 
+
+
+
+
+
+
+
+
+
+// forEach, map, filter, reduce, find, findIndex
+
+// ### Задача 1
+// let a = 0;
+// for (let i = 0; i <= 100; i++){
+// a +=i;
+// }
+// console.log('Sum of numbers from 0 to 100 is:' + a);
+
+// let arr100 = []
+
+// for(let i = 1; 101 > i; i++){
+//     arr100.push(i)
+// }
+// const sum = arr100.reduce((total, value1)=>
+// {
+// return total + value1;
+// }, 0)
+// console.log(sum)
+// ### Задача 2
+// // Задача. В переменной min лежит число от 0 до 59. Определите в какую четверть часа попадает это число (в первую, вторую, третью или четвертую).
+
+// let i = prompt('You need to input number from 0 to 59', '0 - 59');
+// let quaters = []
+// quaters.push[i]
+// quaters.filter(quaters => i < 15, alert("First quarter"));
+
+// if(i > 0 & i < 15){
+//     alert("First quarter");
+// }
+// else if(i > 15 & i <= 30){
+//     alert("Second quarter");
+// }
+// else if(i > 30 & i <= 45){
+//     alert("Third quarter");
+// }
+// else if(i > 45 & i <= 59){
+//     alert("Fourth quarter");
+// }
+// else{
+//     alert("You had inputted wrong number !");
+// }
+
+
+// ### Задача 3
+// Напишите программу, которая выводит через console.log все цифры от 1 до
+// 100, с двумя исключениями. Для чисел, нацело делящихся на 3, она должна выводить ‘Fizz’, а для чисел, делящихся на 5 (но не на 3) – ‘Buzz’.
+// Когда сумеете – исправьте её так, чтобы она выводила «FizzBuzz» для всех
+// чисел, которые делятся и на 3 и на 5.
+// let arr100 = []
+// for(let i = 1; 101 > i; i++){
+//     arr100.push(i)
+// }
+
+// for (let numb of arr100){
+//     if (numb % 3 == 0 && numb % 5 == 0){
+//         console.log("FizzBuzz   " + numb);
+//     }
+//     else if (numb % 3 == 0){
+//         console.log("Fizz   " + numb);
+//     }
+//     else if (numb % 5 == 0){
+//         console.log("Buzz   " + numb);
+//     }
+//     else{
+//         console.log("Ordinary   " + numb);
+//     }
+// }
+
+
+
+// ### Задача 4
+// Даны числа 4, -2, 5, 19, -130, 0, 10, 200, -30. Найдите минимальное и максимальное число.
+
+// let numbers = [4, -2, 5, 19, -130, 0, 10, 200, -30];
+
+// numbers.forEach((numb ) =>
+// {
+//     if(numb > numbers[0]){
+//         numbers[0] = numb;
+//         console.log(numbers[0]);
+//     }
+// })
+
+// for (let numb of numbers) {
+//     if(numb > numbers[0]){
+//         numbers[0] = numb;
+//         console.log(numbers[0]);
+//     }
+//     console.log(numb)
+// }
+// alert(numbers[0]);
+// alert(numbers.length);
+// console.log(numbers);
+
+// let numbers = [4, -2, 5, 19, -130, 0, 10, 200, -30];
+// for (var i = 0; i < numbers.length; i++) {
+//     if(numbers[i] < numbers[0]){
+//         numbers[0] = numbers[i];
+//         console.log(numbers[0]);
+//     }
+// }
+// alert(numbers[0]);
+
+
+
+
+
+// ### Задача 6
+// Дан массив. Нужно удалить из него все дубликаты значений, сохранив исходный порядок элементов.
+
+// Примеры:
+
+// filterUnique([10, 22, 14, 10, 28, 10, 14, 62, 32]) --> [10, 22, 14, 28, 62, 32];
+// filterUnique([3, 14, 15, 92, 6, 5, 35]) --> [3, 14, 15, 92, 6, 5, 35];
+// filterUnique([8, 2, 2, 3, 8, 2, 2, 3]) --> [8, 2, 3];
+
+// console.log(unique([]), []);
+// console.log(unique([5]), [5]);
+// console.log(unique([8, 2, 2, 3, 8, 2, 2, 3]), [8, 2, 3]);
+// console.log(unique(["A", 5, "obj", "true", "arr", "obj", "a", 5, "obj"]), ["A", 5, "obj", "true", "arr", "a"]);
+
+// let filterUnique = [8, 2, 2, 3, 8, 2, 2, 3];
+// filterUnique.forEach ((numb, index,) => {
+//     for (let j = 2; j < filterUnique.length; j++)
+//    if( filterUnique[index + 1] = filterUnique[j]){
+//        filterUnique.splice(j, 1)
+//    }
+// })
+//    console.log(filterUnique);
 

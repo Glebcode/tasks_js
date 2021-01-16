@@ -2,7 +2,7 @@
     background-color: #f0baba;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 div {
     width: 300px;
@@ -32,4 +32,10 @@ body * {
 .bullet.shoot{
     left: 1900px;
     opacity: 1;
+}
+
+#img1 {
+    position: absolute;
+    height: 200px;
+    width: 130px;
 }

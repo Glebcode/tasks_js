@@ -68,17 +68,30 @@ function chPosition() {
     }
     elementWithId.setAttribute('style', `margin-left: ${marginLeft}px`);
     marginLeft += 50;
+    // imgCent.setAttribute('style', `margin: 0 0 0 30%`);
 }
 
 
 btnId.addEventListener('click', chPosition);
 
-function chCircle() {
-    count++
-    elementWithId2.setAttribute('style', `border-radius: 50%; background-color: red`);
-    if (count % 2 == 0) {
-        elementWithId2.setAttribute('style', `border-radius: none; background-color: #f0f0f0`);
-    }
-}
+// function chCircle() {
+//     count++
+//     elementWithId2.setAttribute('style', `border-radius: 50%; background-color: red`);
+//     if (count % 2 == 0) {
+//         elementWithId2.setAttribute('style', `border-radius: none; background-color: #f0f0f0`);
+//     }
+// }
 
-btnId2.addEventListener('click', chCircle);
+// btnId2.addEventListener('click', chCircle);
+
+let imgCent = document.getElementById('img1');
+
+// imgCent.addEventListener('click', chPosition2);
+
+// function chPosition2(){
+//     imgCent.setAttribute('style', `margin: 0 0 0 30%`);
+// }
+// btnId.addEventListener('click', chPosition);
+
+
+ 
