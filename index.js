@@ -55,7 +55,7 @@ let bulletBlack = document.getElementById('bulleton');
 
 function bulletChPosition() {
     if(i <= 6){
-    bulletBlack.classList.add('shoot');  
+    bulletBlack.classList.add('shoot');
     i += 1;
     setTimeout( () => {
         bulletBlack.className = 'bullet';
@@ -83,21 +83,32 @@ let wheels1 = document.getElementById('wheels1');
 let wheels2 = document.getElementById('wheels2');
 
 function busChPosition() {
-    bus.classList.add('movingRight');  
+    bus.classList.add('movingRight');
     wheels1.classList.add('clockWise');
     wheels2.classList.add('clockWise');
+
     setTimeout(() => {
         alert('Шлях завершено, їдемо назад !');
-    }, 2500)
+        wheels1.classList.remove('clockWise');
+        wheels2.classList.remove('clockWise');
+    }, 2500);
+    bus.classList.remove('movingLeft');
+    wheels1.classList.remove('antiClWise');
+    wheels2.classList.remove('antiClWise');
 }
 btnBus1.addEventListener('click', busChPosition);
 
 function busChPosition2() {
-    bus.classList.add('movingLeft'); 
-    wheels1.classList.add('antiClWise'); 
+    bus.classList.remove('movingRight');
+    wheels1.classList.remove('clockWise');
+    wheels2.classList.remove('clockWise');
+    bus.classList.add('movingLeft');
+    wheels1.classList.add('antiClWise');
     wheels2.classList.add('antiClWise');
     setTimeout(() => {
         alert('Вітаю ви вернулись !');
+        wheels1.classList.remove('antiClWise');
+        wheels2.classList.remove('antiClWise');
     }, 2500)
 }
 btnBus2.addEventListener('click', busChPosition2);
@@ -107,14 +118,14 @@ btnBus2.addEventListener('click', busChPosition2);
 
 // document.querySelector('#bulleton').onclick = function shootReaction() {
 // console.log("hi");
- 
+
 // btnId2.addEventListener('click', shootReaction);
 
 // function bulletChPosition() {
 //      let bulletBlack = document.getElementById('bullet');
 //     bulletBlack.classList.add('shoot');
-    
-    
+
+
 // if(i <= 6 ){
 //     btnId2.addEventListener('click', bulletChPosition);
 //     i += 1;
@@ -170,4 +181,3 @@ btnBus2.addEventListener('click', busChPosition2);
 // btnId.addEventListener('click', chPosition);
 
 
- 
