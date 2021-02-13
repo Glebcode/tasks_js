@@ -1,43 +1,199 @@
-.test-div {
+/* .test-div {
     background-color: #f0baba;
-}
+} */
 body{
     overflow-x: hidden;
 }
-div {
+/* div {
     width: 300px;
     height: 300px;
 
-}
+} */
 
 body * {
-    transition: .3s;
+    transition: .2s;
 }
 
-.test-div2 {
+/* .test-div2 {
     background-color: #f0f0f0;
+} */
+/* .buttons{
+    position: relative;
+    top: 100px;
+    left: 40px;
+} */
+#btn2{
+    position: relative;
+    left: 10%;
+    margin-top: 5px;    
+    background-color: rgb(233, 90, 90);
+    border-radius: 25%;
 }
-.pa {
+/* .pa {
     position: absolute;
     top: 0;
     left: 0;
+} */
+
+.pageWrapper{
+    width: 700px;
+    height: 240px;
+
+}
+
+
+.divGun {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+     width: 200px;
+    height: 140px;
+    /* transform: rotate(90deg); */
+}
+#gun{
+    width: 200px;
+    height: 140px;
 }
 .bullet{
+    position: absolute;
+    margin: -128px 0 0 185px;
     width: 40px;
     height: 20px;
     border-radius: 0px 18px 18px 0px;
     background: #000;
-    opacity: 0;
-}
-.bullet.shoot{
-    left: 1900px;
     opacity: 1;
 }
+.bullet.shoot{
+    animation: shoot .2s linear infinite;
+}
+@keyframes shoot {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    50%{
+        left: 500px;
+        opacity: 1;
+    }
+    51%{
+        left: 500px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 0;
+    }
+}
 
-#img1 {
+#busWrapp{
+    position: absolute;
+    width: 430px;
+    height: 365px;
+}
+#bus{
+    position: absolute;
+    top: 10%;
+    width: 400px;
+    height: 240px;
+}
+.wheels{
+    position: absolute;
+    width: 74px;
+    height: 74px;
+}
+#wheel{
+    padding: 47% 0 0 11%;
+}
+#wheel2{
+    padding: 0 0 0 64%;
+}
+.btnBusWrapper{
+    position: relative;
+    left: 10%;
+    height: 90px;
+    width: 150px;
+}
+.btnBus{
+    background-color: rgb(245, 119, 119);
+    border-radius: 25%;
+}
+ 
+#busWrapp.movingRight{
+    animation: movingRight 3s linear forwards;    ;
+}
+@keyframes movingRight {
+    0% {
+        left: 0;
+    }
+    50%{
+        left:  80px;
+    }
+    100% {
+        left: 200px;
+    }
+}
+
+#busWrapp.movingLeft{
+    animation: movingLeft 3s linear;
+}
+@keyframes movingLeft {
+    0% {
+        left: 200px;
+    }
+    50%{
+        left:  120px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+.wheels.clockWise{
+    animation: clockWise 2s linear infinite;
+}
+@keyframes clockWise {
+    0% {
+        transform: rotate(90deg);
+    }
+    /* 25% {
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(270deg);
+    } */
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wheels.antiClWise{
+    animation: antiClWise 2s linear infinite;
+}
+@keyframes antiClWise {
+    0% {
+        transform: rotate(-90deg);
+    }
+    /* 25% {
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    } */
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* .clockWise{
+    transform: rotate(1080deg)
+} 
+.antiClWise{
+    transform: rotate(-1080deg) */
+}
+/* #img1 {
     position: absolute;
     height: 200px;
     width: 130px;
     top: 0;
     left: 0;
-}
+} */
